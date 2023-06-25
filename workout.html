@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@700&display=swap" rel="stylesheet">
+  <div class="logo">Alejandro's Workout Watch</div>
+
+  <title>Workout App</title>
+  <link rel="stylesheet" type="text/css" href="workout.css">
+</head>
+<body>
+  <div class="watch">
+    <div class="watch-content">
+      <h1 id="greeting"></h1>
+      <div id="timer">00:00:00</div>
+      <div id="speed">0 km/h</div>
+      <div id="distance">0 km</div>
+      <div id="calories">0 calories</div>
+      <div id="water-intake">Recommended Water Intake: 0 ml</div>
+     
+      <div class="button-container">
+        <button id="start-btn">
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text">Start</span>
+        </button>
+      
+        <button id="stop-btn"> 
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text">Stop</span>
+        </button>
+      
+        <button id="restart-btn">
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text">Restart</span>
+        </button>
+      </div>
+      <select id="distance-goal">
+        <option value="5">5 miles</option>
+        <option value="10">10 miles</option>
+        <option value="15">15 miles</option>
+        <option value="20">20 miles</option>
+      </select>
+      
+      <div id="saved-data"></div>
+    </div>
+  </div>
+
+  <script src="workout.js"></script>
+</body>
+</html>
